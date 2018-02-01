@@ -1,78 +1,98 @@
-// import React, { Component } from 'react';
-// import { Button, Container, Dropdown, Icon, Menu } from 'semantic-ui-react';
-import React from 'react';
-// import { Menu } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import { Menu, Icon, Container, Image } from 'semantic-ui-react';
+// import logo from '../assets/art_and_night-logowithText-02b.svg';
+// import logo from '../assets/kkk.png';
 
-// const items = [
-//   { key: 'home', active: true, name: 'Home' },
-//   { key: 'artists', name: 'Artists' },
-//   { key: 'curators', name: 'Curators' }
-// ];
+export default class NavBar extends Component {
+  state = {};
 
-function NavBar(props) {
-  // return <Menu items={items} />;
-  // }
-  return <h2>NavBar</h2>;
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+  render() {
+    const { activeItem } = this.state;
+
+    return (
+      <div className="ui grid">
+        <div className="column three wide">
+          <Image
+            href="/"
+            src="/assets/logo.svg"
+            fluid
+            style={{
+              'padding-right': '10px',
+              margin: '10%',
+              'min-width': '15em'
+            }}
+          />
+        </div>
+
+        {/* <div className="column thirteen wide right aligned"> */}
+        <div className="column ten wide right floated">
+          <Menu size="small" secondary stackable>
+            <Menu.Menu position="right">
+              <Menu.Item
+                href="/"
+                name="home"
+                active={activeItem === 'home'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Home
+              </Menu.Item>
+
+              <Menu.Item
+                name="artists"
+                href="/artists"
+                active={activeItem === 'artists'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Artists
+              </Menu.Item>
+
+              <Menu.Item
+                name="curators"
+                href="/curators"
+                active={activeItem === 'curators'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Curators
+              </Menu.Item>
+
+              <Menu.Item
+                name="locations"
+                href="/locations"
+                active={activeItem === 'locations'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Locations
+              </Menu.Item>
+
+              <Menu.Item
+                name="agenda"
+                href="/agenda"
+                active={activeItem === 'agenda'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Agenda
+              </Menu.Item>
+
+              <Menu.Item
+                name="about"
+                href="/about"
+                active={activeItem === 'about'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                About
+              </Menu.Item>
+            </Menu.Menu>
+          </Menu>
+        </div>
+      </div>
+    );
+  }
 }
-
-// const { activeMenuItem } = props;
-//   return (
-//     <Menu pointing inverted size="small">
-//       <Container>
-//         <Menu.Item>
-//           <Menu.Item header>
-//             <Icon name="book" size="big" color="blue" />
-//             art and night
-//           </Menu.Item>
-//         </Menu.Item>
-//         <Menu.Item
-//           name="home"
-//           as={Link}
-//           to="/"
-//           active={activeMenuItem === 'home'}
-//         />
-//         <Menu.Item
-//           name="search"
-//           as={Link}
-//           to="/search"
-//           active={activeMenuItem === 'search'}
-//         />
-//         <Menu.Menu position="right">
-//           <Dropdown item icon={<Icon name="ellipsis horizontal" size="big" />}>
-//             <Dropdown.Menu>
-//               <Dropdown.Item
-//                 onClick={() => {
-//                   window.location = UDACITY_URL;
-//                 }}
-//               >
-//                 <Icon name="info circle" />
-//                 React Nanodegree
-//               </Dropdown.Item>
-//               <Dropdown.Item
-//                 onClick={() => {
-//                   window.location = GITHUB_URL;
-//                 }}
-//               >
-//                 <Icon name="github alternate" />
-//                 Source Code
-//               </Dropdown.Item>
-//               <Dropdown.Item
-//                 onClick={() => {
-//                   window.location = LINKEDIN_URL;
-//                 }}
-//               >
-//                 <Icon name="linkedin square" />
-//                 Connect on LinkedIn
-//               </Dropdown.Item>
-//             </Dropdown.Menu>
-//           </Dropdown>
-//           <Menu.Item>
-//             <Button primary content="Add Book" as={Link} to="/search" />
-//           </Menu.Item>
-//         </Menu.Menu>
-//       </Container>
-//     </Menu>
-//   );
-// }
-
-export default NavBar;
