@@ -11,14 +11,13 @@ const About = () => <h2>About</h2>;
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <BrowserRouter>
         <div>
           <Header />
           <Route exact path="/" component={Home} />
           <Route path="/artists" component={Artists} />
           <Route path="/curators" component={Curators} />
-          <Route path="/locations" component={Locations} />
           <Route path="/locations" component={Locations} />
           <Route path="/agenda" component={Agenda} />
           <Route path="/about" component={About} />
