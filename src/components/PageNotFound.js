@@ -1,18 +1,14 @@
 import React from 'react';
+import { Container, Header, Segment } from 'semantic-ui-react';
 
 const PageNotFound = () => (
-  <div>
-    <h2>Page not found!</h2>
-  </div>
+  <Segment inverted color="red">
+    <Container>
+      <Segment inverted color="red" textAlign="center" padded="very">
+        <Header size="huge" content="404" subheader="Page not found :-(" />
+      </Segment>
+    </Container>
+  </Segment>
 );
-
-{
-  /* <div>
-  <Container textAlign="center" className="not-found-message">
-    <Header content="404" size="huge" />
-    <Header size="large">Page Not Found</Header>
-  </Container>
-</div> */
-}
 
 export default PageNotFound;

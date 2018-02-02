@@ -1,10 +1,9 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import { Image } from 'semantic-ui-react';
 
 const Home = () => (
   <div>
-    <h2>Home</h2>
-    <SearchBar />
+    <Image src="/assets/home.jpg" fluid />
   </div>
 );
 

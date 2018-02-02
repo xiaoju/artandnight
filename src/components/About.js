@@ -1,7 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Container, Header, Segment, Grid } from 'semantic-ui-react';
 
 function About() {
-  return <h2>About</h2>;
+  return (
+    <Segment inverted color="red">
+      <Container>
+        <Grid stretched columns={1}>
+          <Grid.Column>
+            <Segment inverted color="red" padded="very" textAlign="center">
+              <Header inverted color="red" size="huge" content="ABOUT US" />
+              <p>
+                Nous travaillons à créer un nouveau modèle de distribution de
+                l'art: plus accessible, plus intime, plus ouvert.
+              </p>
+              <p>A suivre...</p>
+            </Segment>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </Segment>
+  );
 }
 
 export default About;

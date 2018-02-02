@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, Icon, Container, Image, Grid, Segment } from 'semantic-ui-react';
+import { Menu, Image, Grid } from 'semantic-ui-react';
 
 export default class NavBar extends Component {
   state = {};
@@ -24,18 +24,25 @@ export default class NavBar extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column floated="right" textAlign="right">
-            {/* <div className="column thirteen wide right aligned"> */}
-            {/* <div className="column ten wide right floated"> */}
-            {/* <div className="column ten wide right aligned"> */}
-            {/* <div className="column ten wide right aligned"> */}
-            <Menu size="large" secondary stackable position="right">
+
+          <Grid.Column
+            stretched
+            // verticalAlign="middle"
+          >
+            <Menu
+              // vertical
+              size="large"
+              // pointing
+              secondary
+              stackable
+              color="red"
+            >
               <Menu.Item
                 href="/"
                 name="home"
                 active={activeItem === 'home'}
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 Home
               </Menu.Item>
@@ -45,7 +52,7 @@ export default class NavBar extends Component {
                 href="/artists"
                 active={activeItem === 'artists'}
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 Artists
               </Menu.Item>
@@ -54,8 +61,9 @@ export default class NavBar extends Component {
                 name="curators"
                 href="/curators"
                 active={activeItem === 'curators'}
+                // active="true"
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 Curators
               </Menu.Item>
@@ -65,7 +73,7 @@ export default class NavBar extends Component {
                 href="/locations"
                 active={activeItem === 'locations'}
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 Locations
               </Menu.Item>
@@ -75,7 +83,7 @@ export default class NavBar extends Component {
                 href="/agenda"
                 active={activeItem === 'agenda'}
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 Agenda
               </Menu.Item>
@@ -85,7 +93,7 @@ export default class NavBar extends Component {
                 href="/about"
                 active={activeItem === 'about'}
                 onClick={this.handleItemClick}
-                color="red"
+                // color="red"
               >
                 About
               </Menu.Item>
