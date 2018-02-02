@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image, Grid } from 'semantic-ui-react';
+import {
+  Container,
+  Card,
+  Icon,
+  Image,
+  Grid,
+  Header,
+  Segment
+} from 'semantic-ui-react';
 
 function Curators() {
   return (
-    <div>
-      <div>
-        <h1 className="ui center aligned page grid">THE CURATORS</h1>
-        <h3 className="ui center aligned page grid">Meet the team!</h3>
-      </div>
-      <Card.Group className="ui center aligned page grid">
+    <Container>
+      <Segment inverted color="red" textAlign="center" padded="very">
+        <Header size="huge" content="THE CURATORS" subheader="Meet the team!" />
+      </Segment>
+      <Card.Group itemsPerRow={4} className="ui doubling stackable">
         <Card>
-          <Image src="/assets/curator1.png" />
+          <Image src="/assets/curator1.png" fluid />
           <Card.Content>
             <Card.Header>Join us!</Card.Header>
             <Card.Meta>
@@ -23,7 +30,7 @@ function Curators() {
         </Card>
 
         <Card>
-          <Image src="/assets/curator2.webp" />
+          <Image src="/assets/curator2.webp" fluid />
           <Card.Content>
             <Card.Header>Matthew</Card.Header>
             <Card.Meta>
@@ -35,7 +42,7 @@ function Curators() {
           </Card.Content>
         </Card>
         <Card>
-          <Image src="/assets/curator3.webp" />
+          <Image src="/assets/curator3.webp" fluid />
           <Card.Content>
             <Card.Header>Matthew</Card.Header>
             <Card.Meta>
@@ -48,7 +55,7 @@ function Curators() {
         </Card>
 
         <Card>
-          <Image src="/assets/matthew.png" />
+          <Image src="/assets/matthew.png" fluid />
           <Card.Content>
             <Card.Header>Matthew</Card.Header>
             <Card.Meta>
@@ -60,7 +67,7 @@ function Curators() {
           </Card.Content>
         </Card>
       </Card.Group>
-    </div>
+    </Container>
   );
 }
 

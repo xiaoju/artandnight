@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, Icon, Container, Image, Grid } from 'semantic-ui-react';
-// import logo from '../assets/art_and_night-logowithText-02b.svg';
-// import logo from '../assets/kkk.png';
+import { Menu, Icon, Container, Image, Grid, Segment } from 'semantic-ui-react';
 
 export default class NavBar extends Component {
   state = {};
@@ -26,73 +24,71 @@ export default class NavBar extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column floated="right">
+          <Grid.Column floated="right" textAlign="right">
             {/* <div className="column thirteen wide right aligned"> */}
             {/* <div className="column ten wide right floated"> */}
             {/* <div className="column ten wide right aligned"> */}
             {/* <div className="column ten wide right aligned"> */}
-            <Menu size="small" secondary stackable>
-              <Menu.Menu position="right">
-                <Menu.Item
-                  href="/"
-                  name="home"
-                  active={activeItem === 'home'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  Home
-                </Menu.Item>
+            <Menu size="large" secondary stackable position="right">
+              <Menu.Item
+                href="/"
+                name="home"
+                active={activeItem === 'home'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Home
+              </Menu.Item>
 
-                <Menu.Item
-                  name="artists"
-                  href="/artists"
-                  active={activeItem === 'artists'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  Artists
-                </Menu.Item>
+              <Menu.Item
+                name="artists"
+                href="/artists"
+                active={activeItem === 'artists'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Artists
+              </Menu.Item>
 
-                <Menu.Item
-                  name="curators"
-                  href="/curators"
-                  active={activeItem === 'curators'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  Curators
-                </Menu.Item>
+              <Menu.Item
+                name="curators"
+                href="/curators"
+                active={activeItem === 'curators'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Curators
+              </Menu.Item>
 
-                <Menu.Item
-                  name="locations"
-                  href="/locations"
-                  active={activeItem === 'locations'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  Locations
-                </Menu.Item>
+              <Menu.Item
+                name="locations"
+                href="/locations"
+                active={activeItem === 'locations'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Locations
+              </Menu.Item>
 
-                <Menu.Item
-                  name="agenda"
-                  href="/agenda"
-                  active={activeItem === 'agenda'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  Agenda
-                </Menu.Item>
+              <Menu.Item
+                name="agenda"
+                href="/agenda"
+                active={activeItem === 'agenda'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                Agenda
+              </Menu.Item>
 
-                <Menu.Item
-                  name="about"
-                  href="/about"
-                  active={activeItem === 'about'}
-                  onClick={this.handleItemClick}
-                  color="red"
-                >
-                  About
-                </Menu.Item>
-              </Menu.Menu>
+              <Menu.Item
+                name="about"
+                href="/about"
+                active={activeItem === 'about'}
+                onClick={this.handleItemClick}
+                color="red"
+              >
+                About
+              </Menu.Item>
             </Menu>
           </Grid.Column>
         </Grid.Row>

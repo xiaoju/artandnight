@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import { Segment } from 'semantic-ui-react';
 
 function Footer() {
   return (
-    <div>
-      <div className="ui divider" />
-      <h3 className="ui stackable center aligned page grid">
-        ©2018 by art and night
-      </h3>
-    </div>
+    <Segment padded="very" textAlign="center" size="small">
+      ©2018 by art and night
+    </Segment>
   );
 }
 
