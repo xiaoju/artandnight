@@ -11,7 +11,7 @@ function Locations() {
             color="red"
             size="huge"
             content="THE LOCATIONS"
-            // subheader="Meet the team!"
+            subheader="Book it or list it!"
           />
         </Segment>
         <Card.Group itemsPerRow={2} className="ui doubling stackable">

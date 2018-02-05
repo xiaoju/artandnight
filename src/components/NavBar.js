@@ -2,35 +2,35 @@ import React, { Component } from 'react';
 import { Menu, Image, Grid } from 'semantic-ui-react';
 
 export default class NavBar extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: this.props.match.params.activeItem
+    };
+  }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
     const { activeItem } = this.state;
-
+    console.log('activeItem: ', activeItem);
     return (
-      <Grid relaxed>
-        <Grid.Row columns={2} padded>
+      <Grid relaxed padded>
+        <Grid.Row columns={2}>
           <Grid.Column floated="left" width={3}>
             <Image
               href="/"
               src="/assets/logo.svg"
               fluid
               style={{
-                //   // 'padding-right': '10px',
                 margin: '10%',
-                'min-width': '15em'
+                minWidth: '15em'
               }}
             />
           </Grid.Column>
 
-          <Grid.Column
-            stretched
-            // verticalAlign="middle"
-          >
+          <Grid.Column stretched>
             <Menu
-              // vertical
               size="large"
               // pointing
               secondary
@@ -38,7 +38,7 @@ export default class NavBar extends Component {
               color="red"
             >
               <Menu.Item
-                href="/"
+                href="/home"
                 name="home"
                 active={activeItem === 'home'}
                 onClick={this.handleItemClick}

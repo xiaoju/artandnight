@@ -17,10 +17,11 @@ const App = () => {
       <BrowserRouter>
         <div>
           <Container>
-            <NavBar />
+            <Route path="/:activeItem?" component={NavBar} />
           </Container>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/artists" component={Artists} />
             <Route path="/curators" component={Curators} />
             <Route path="/locations" component={Locations} />
