@@ -5,7 +5,7 @@ export default class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: this.props.match.params.activeItem
+      activeItem: this.props.match.params.activeItem || 'home'
     };
   }
 
