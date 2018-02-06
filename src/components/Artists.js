@@ -10,7 +10,7 @@ function Artists() {
             color="red"
             size="huge"
             content="THE ARTISTS"
-            // subheader="Meet the team!"
+            subheader="They'll art the night!"
           />
         </Segment>
         <Card.Group itemsPerRow={3} className="ui doubling stackable">
@@ -18,9 +18,6 @@ function Artists() {
             <Image src="/assets/artist1.png" fluid />
             <Card.Content>
               <Card.Header>Join us!</Card.Header>
-              {/* <Card.Meta>
-                <span className="date">Some more text.</span>
-              </Card.Meta> */}
               <Card.Description>
                 You want to be represented by art and night and showcase your
                 work at one of our exclusive locations? Pick the curator who

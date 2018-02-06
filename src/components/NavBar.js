@@ -13,7 +13,6 @@ export default class NavBar extends Component {
 
   render() {
     const { activeItem } = this.state;
-    console.log('activeItem: ', activeItem);
     return (
       <Grid relaxed padded>
         <Grid.Row columns={2}>
@@ -30,19 +29,12 @@ export default class NavBar extends Component {
           </Grid.Column>
 
           <Grid.Column stretched>
-            <Menu
-              size="large"
-              // pointing
-              secondary
-              stackable
-              color="red"
-            >
+            <Menu size="large" secondary stackable color="red">
               <Menu.Item
                 href="/home"
                 name="home"
                 active={activeItem === 'home'}
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 Home
               </Menu.Item>
@@ -52,7 +44,6 @@ export default class NavBar extends Component {
                 href="/artists"
                 active={activeItem === 'artists'}
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 Artists
               </Menu.Item>
@@ -61,9 +52,7 @@ export default class NavBar extends Component {
                 name="curators"
                 href="/curators"
                 active={activeItem === 'curators'}
-                // active="true"
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 Curators
               </Menu.Item>
@@ -73,7 +62,6 @@ export default class NavBar extends Component {
                 href="/locations"
                 active={activeItem === 'locations'}
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 Locations
               </Menu.Item>
@@ -83,7 +71,6 @@ export default class NavBar extends Component {
                 href="/agenda"
                 active={activeItem === 'agenda'}
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 Agenda
               </Menu.Item>
@@ -93,7 +80,6 @@ export default class NavBar extends Component {
                 href="/about"
                 active={activeItem === 'about'}
                 onClick={this.handleItemClick}
-                // color="red"
               >
                 About
               </Menu.Item>
