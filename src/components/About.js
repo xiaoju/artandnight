@@ -14,6 +14,7 @@ function About() {
                 l'art: plus accessible, plus intime, plus ouvert.
               </p>
               <p>A suivre...</p>
+              <p>Contactez-nous: jerome@artandnight.com</p>
             </Segment>
           </Grid.Column>
         </Grid>
