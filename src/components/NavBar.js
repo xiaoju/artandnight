@@ -14,7 +14,7 @@ export default class NavBar extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Grid relaxed padded>
+      <Grid padded="vertically">
         <Grid.Row columns={2}>
           <Grid.Column floated="left" width={3}>
             <Image
@@ -22,7 +22,7 @@ export default class NavBar extends Component {
               src="/assets/logo.svg"
               fluid
               style={{
-                margin: '10%',
+                // margin: '5%',
                 minWidth: '15em'
               }}
             />

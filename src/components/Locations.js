@@ -11,7 +11,7 @@ function Locations() {
             color="red"
             size="huge"
             content="THE LOCATIONS"
-            subheader="Book it or list it!"
+            subheader="Book it or list it"
           />
         </Segment>
         <Card.Group itemsPerRow={2} className="ui doubling stackable">
@@ -27,9 +27,6 @@ function Locations() {
             <Image src="/assets/location2.jpg" fluid />
             <Card.Content>
               <Card.Header>Location 2</Card.Header>
-              {/* <Card.Meta>
-                <span className="date">Some more text.</span>
-              </Card.Meta> */}
               <Card.Description>Description of this location.</Card.Description>
             </Card.Content>
           </Card>

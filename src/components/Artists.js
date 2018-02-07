@@ -10,7 +10,7 @@ function Artists() {
             color="red"
             size="huge"
             content="THE ARTISTS"
-            subheader="They'll art the night!"
+            subheader="They art the nights!"
           />
         </Segment>
         <Card.Group itemsPerRow={3} className="ui doubling stackable">
