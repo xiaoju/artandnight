@@ -25,7 +25,7 @@ function Locations() {
           <Card>
             <Image src="/assets/location1.jpg" fluid />
             <Card.Content>
-              <Card.Header>Lieu 1</Card.Header>
+              <Card.Header>Ici</Card.Header>
               <Card.Description>A suivre...</Card.Description>
             </Card.Content>
           </Card>
@@ -33,7 +33,7 @@ function Locations() {
           <Card>
             <Image src="/assets/location2.jpg" fluid />
             <Card.Content>
-              <Card.Header>Lieu 2</Card.Header>
+              <Card.Header>ou là</Card.Header>
               <Card.Description>A suivre...</Card.Description>
             </Card.Content>
           </Card>
