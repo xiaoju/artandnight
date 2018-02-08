@@ -1,0 +1,4 @@
+.ui.stackable.grid > .row > .column.wide.noPadding {
+  padding: 0rem !important;
+  /* margin-top: 1rem !important; */
+}

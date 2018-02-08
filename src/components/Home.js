@@ -2,12 +2,12 @@ import React from 'react';
 import { Image } from 'semantic-ui-react';
 
 const Home = () => (
-  <Image fluid>
-    <Image src="/assets/home.jpg" />
+  <Image>
+    <Image fluid src="/assets/home.jpg" />
     <div
       style={{
         color: 'white',
-        'font-size': '4rem',
+        fontSize: '4rem',
         position: 'absolute',
         top: '33%',
         left: '50%',

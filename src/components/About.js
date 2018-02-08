@@ -3,7 +3,11 @@ import { Container, Header, Segment, Grid } from 'semantic-ui-react';
 
 function About() {
   return (
-    <Segment inverted color="red">
+    <Segment
+      inverted
+      color="red"
+      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+    >
       <Container>
         <Grid>
           <Grid.Column>
@@ -13,7 +17,7 @@ function About() {
               size="huge"
               content="ABOUT US"
               textAlign="center"
-              style={{ 'min-height': '3em' }}
+              style={{ minHeight: '3em' }}
             />
             <p>
               Nous travaillons à créer un nouveau modèle de distribution de

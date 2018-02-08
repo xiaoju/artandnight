@@ -14,17 +14,21 @@ const App = () => {
   return (
     <div>
       <Route path="/:activeItem?" component={NavBar} />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/home" component={Home} />
-        <Route path="/artists" component={Artists} />
-        <Route path="/curators" component={Curators} />
-        <Route path="/locations" component={Locations} />
-        <Route path="/agenda" component={Agenda} />
-        <Route path="/about" component={About} />
-        <Route component={PageNotFound} />
-      </Switch>
-      <Footer />
+
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/artists" component={Artists} />
+          <Route path="/curators" component={Curators} />
+          <Route path="/locations" component={Locations} />
+          <Route path="/agenda" component={Agenda} />
+          <Route path="/about" component={About} />
+          <Route component={PageNotFound} />
+        </Switch>
+      </div>
+
+      <Route path="/about" component={Footer} />
     </div>
   );
 };
