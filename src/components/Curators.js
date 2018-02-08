@@ -10,25 +10,27 @@ function Curators() {
             inverted
             color="red"
             size="huge"
-            content="THE CURATORS"
-            subheader="Meet the team!"
+            // content="THE CURATORS"
+            // subheader="Meet the team!"
+            content="LES CURATEURS"
+            subheader="Présentation!"
           />
         </Segment>
-        <Card.Group itemsPerRow={4} className="ui doubling stackable">
+        <Card.Group itemsPerRow={3} className="ui doubling stackable">
           <Card>
             <Image src="/assets/curator1.png" fluid />
             <Card.Content>
               <Card.Header>Join us!</Card.Header>
-              <Card.Meta>
+              {/* <Card.Meta>
                 <span className="date">Some more text.</span>
-              </Card.Meta>
+              </Card.Meta> */}
               <Card.Description>
-                Matthew is a musician living in Nashville.
+                Contact: jerome@artandnight.com
               </Card.Description>
             </Card.Content>
           </Card>
 
-          <Card>
+          {/* <Card>
             <Image src="/assets/curator2.webp" fluid />
             <Card.Content>
               <Card.Header>Matthew</Card.Header>
@@ -64,7 +66,7 @@ function Curators() {
                 Matthew is a musician living in Nashville.
               </Card.Description>
             </Card.Content>
-          </Card>
+          </Card> */}
         </Card.Group>
       </Container>
     </Segment>

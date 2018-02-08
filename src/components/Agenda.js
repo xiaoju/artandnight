@@ -11,8 +11,9 @@ function Agenda() {
             inverted
             color="red"
             size="huge"
-            content="THE AGENDA"
+            content="AGENDA"
           />
+          <p>Bientôt...</p>
         </Segment>
       </Container>
     </Segment>

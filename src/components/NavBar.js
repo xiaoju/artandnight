@@ -37,7 +37,8 @@ export default class NavBar extends Component {
                   active={activeItem === 'home'}
                   onClick={this.handleItemClick}
                 >
-                  Home
+                  {/* Home */}
+                  Accueil
                 </Menu.Item>
 
                 <Menu.Item
@@ -46,7 +47,8 @@ export default class NavBar extends Component {
                   active={activeItem === 'artists'}
                   onClick={this.handleItemClick}
                 >
-                  Artists
+                  {/* Artists */}
+                  Artistes
                 </Menu.Item>
 
                 <Menu.Item
@@ -55,7 +57,8 @@ export default class NavBar extends Component {
                   active={activeItem === 'curators'}
                   onClick={this.handleItemClick}
                 >
-                  Curators
+                  {/* Curators */}
+                  Curateurs
                 </Menu.Item>
 
                 <Menu.Item
@@ -64,7 +67,8 @@ export default class NavBar extends Component {
                   active={activeItem === 'locations'}
                   onClick={this.handleItemClick}
                 >
-                  Locations
+                  {/* Locations */}
+                  Lieux
                 </Menu.Item>
 
                 <Menu.Item
@@ -73,6 +77,7 @@ export default class NavBar extends Component {
                   active={activeItem === 'agenda'}
                   onClick={this.handleItemClick}
                 >
+                  {/* Agenda */}
                   Agenda
                 </Menu.Item>
 
@@ -82,7 +87,8 @@ export default class NavBar extends Component {
                   active={activeItem === 'about'}
                   onClick={this.handleItemClick}
                 >
-                  About
+                  {/* About */}
+                  A propos
                 </Menu.Item>
               </Menu>
             </Grid.Column>

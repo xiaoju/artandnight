@@ -9,6 +9,7 @@ import Agenda from './Agenda';
 import About from './About';
 import PageNotFound from './PageNotFound';
 import Footer from './Footer';
+import { Segment } from 'semantic-ui-react';
 
 const App = () => {
   return (
@@ -16,19 +17,25 @@ const App = () => {
       <Route path="/:activeItem?" component={NavBar} />
 
       <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/home" component={Home} />
-          <Route path="/artists" component={Artists} />
-          <Route path="/curators" component={Curators} />
-          <Route path="/locations" component={Locations} />
-          <Route path="/agenda" component={Agenda} />
-          <Route path="/about" component={About} />
-          <Route component={PageNotFound} />
-        </Switch>
+        <Segment
+          inverted
+          color="red"
+          style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+        >
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/home" component={Home} />
+            <Route path="/artists" component={Artists} />
+            <Route path="/curators" component={Curators} />
+            <Route path="/locations" component={Locations} />
+            <Route path="/agenda" component={Agenda} />
+            <Route path="/about" component={About} />
+            <Route component={PageNotFound} />
+          </Switch>
+        </Segment>
       </div>
-
-      <Route path="/about" component={Footer} />
+      <Footer />
+      {/* <Route path="/about" component={Footer} /> */}
     </div>
   );
 };

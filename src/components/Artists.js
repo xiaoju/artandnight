@@ -9,8 +9,10 @@ function Artists() {
             inverted
             color="red"
             size="huge"
-            content="THE ARTISTS"
-            subheader="They art the nights!"
+            // content="THE ARTISTS"
+            // subheader="They art the nights!"
+            content="LES ARTISTES"
+            // subheader="xxx"
           />
         </Segment>
         <Card.Group itemsPerRow={3} className="ui doubling stackable">
@@ -18,7 +20,7 @@ function Artists() {
             <Image src="/assets/artist1.png" fluid />
             <Card.Content>
               <Card.Header>Join us!</Card.Header>
-              <Card.Description>
+              <Card.Description style={{ textAlign: 'justify' }}>
                 You want to be represented by art and night and showcase your
                 work at one of our exclusive locations? Pick the curator who
                 fits you best on our Curators page... and apply by sending
@@ -27,7 +29,7 @@ function Artists() {
             </Card.Content>
           </Card>
 
-          <Card>
+          {/* <Card>
             <Image src="/assets/curator2.webp" fluid />
             <Card.Content>
               <Card.Header>Matthew</Card.Header>
@@ -50,7 +52,7 @@ function Artists() {
                 Matthew is a musician living in Nashville.
               </Card.Description>
             </Card.Content>
-          </Card>
+          </Card> */}
         </Card.Group>
       </Container>
     </Segment>
