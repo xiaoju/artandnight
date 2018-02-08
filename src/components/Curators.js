@@ -3,24 +3,32 @@ import { Container, Card, Image, Header, Segment } from 'semantic-ui-react';
 
 function Curators() {
   return (
-    <Segment inverted color="red">
+    <Segment
+      inverted
+      color="red"
+      textAlign="center"
+      padded="very"
+      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+    >
       <Container>
-        <Segment inverted color="red" textAlign="center" padded="very">
-          <Header
-            inverted
-            color="red"
-            size="huge"
-            // content="THE CURATORS"
-            // subheader="Meet the team!"
-            content="LES CURATEURS"
-            subheader="Présentation!"
-          />
-        </Segment>
+        <Header
+          style={{ marginBottom: '2em' }}
+          inverted
+          color="red"
+          size="huge"
+          // content="THE CURATORS"
+          // subheader="Meet the team!"
+          content="LES CURATEURS"
+          subheader="Présentation de l'équipe!"
+        />
         <Card.Group itemsPerRow={3} className="ui doubling stackable">
           <Card>
             <Image src="/assets/curator1.png" fluid />
             <Card.Content>
-              <Card.Header>Join us!</Card.Header>
+              {/* <Card.Header>Join us!</Card.Header> */}
+              <Card.Header>
+                Rejoignez <em>art and night</em>!
+              </Card.Header>
               {/* <Card.Meta>
                 <span className="date">Some more text.</span>
               </Card.Meta> */}

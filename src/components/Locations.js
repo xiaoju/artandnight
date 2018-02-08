@@ -3,19 +3,24 @@ import { Container, Card, Image, Header, Segment } from 'semantic-ui-react';
 
 function Locations() {
   return (
-    <Segment inverted color="red">
+    <Segment
+      inverted
+      color="red"
+      textAlign="center"
+      padded="very"
+      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+    >
       <Container>
-        <Segment inverted color="red" textAlign="center" padded="very">
-          <Header
-            inverted
-            color="red"
-            size="huge"
-            content="LES LIEUX"
-            subheader="Ce sera pour une réservation? ...Ou bien c'est vous qui invitez?"
-            // content="THE LOCATIONS"
-            // subheader="Book it or list it"
-          />
-        </Segment>
+        <Header
+          style={{ marginBottom: '2em' }}
+          inverted
+          color="red"
+          size="huge"
+          content="LES LIEUX"
+          subheader="Ce sera pour une réservation? ...Ou bien c'est vous qui invitez?"
+          // content="THE LOCATIONS"
+          // subheader="Book it or list it"
+        />
         <Card.Group itemsPerRow={2} className="ui doubling stackable">
           <Card>
             <Image src="/assets/location1.jpg" fluid />
