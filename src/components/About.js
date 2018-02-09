@@ -25,7 +25,7 @@ function About() {
         </p>
         <p>A suivre...</p>
         <br />
-        <p style={{ textAlign: 'right' }}>Contact: jerome@artandnight.com</p>
+        <p style={{ textAlign: 'right' }}>jerome@artandnight.com</p>
       </Container>
     </Segment>
   );
