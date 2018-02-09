@@ -9,8 +9,13 @@ A simple static website, built with create-react-app.
 `clone https://github.com/xiaoju/artandnight.git`
 `cd activeLink`
 `npm install` (or `yarn install`)
+`npm build` (or `yarn build`)
 `npm start` (or `yarn start`)
 visit `http://localhost:3000`
+
+`sudo npm install -g pushstate-server`
+`pushstate-server build`
+visit `http://localhost:9000/`
 
 # deploy to Heroku:
 

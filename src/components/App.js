@@ -9,7 +9,6 @@ import Agenda from './Agenda';
 import About from './About';
 import PageNotFound from './PageNotFound';
 import Footer from './Footer';
-import { Segment } from 'semantic-ui-react';
 
 const App = () => {
   return (
