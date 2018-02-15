@@ -39,12 +39,12 @@ function Artists() {
                 exposer vos travaux en nos{' '}
                 <a href="/locations" style={{ textAlign: 'right' }}>
                   lieux
-                </a>? Choisissez le{' '}
+                </a>? <br />Choisissez le{' '}
                 <a href="/curators" style={{ textAlign: 'right' }}>
                   curateur
                 </a>{' '}
-                qui vous correspond le mieux... et faites votre candidature en
-                lui envoyant directement votre portfolio!
+                qui vous correspond le mieux, puis envoyez lui directement votre
+                portfolio pour qu'il étudie votre candidature!
               </Card.Description>
             </Card.Content>
           </Card>
