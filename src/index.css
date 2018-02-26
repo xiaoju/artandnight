@@ -14,3 +14,19 @@ body,
   /* overflow: hidden; */
   /* height: 100%; */
 }
+
+.ui.container > p > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.ui.container > p > div > a {
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5em;
+  margin: auto;
+}

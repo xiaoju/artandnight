@@ -1,5 +1,8 @@
 import React from 'react';
-import { Segment, Container, Header } from 'semantic-ui-react';
+import { Grid, Segment, Container, Header } from 'semantic-ui-react';
+import iconFacebook from '../pictures/iconFacebook.svg';
+import iconTwitter from '../pictures/iconTwitter.svg';
+import iconMail from '../pictures/iconMail.svg';
 
 function About() {
   return (
@@ -25,7 +28,38 @@ function About() {
         </p>
         <p>A suivre...</p>
         <br />
-        <p style={{ textAlign: 'right' }}>jerome@artandnight.com</p>
+
+        <p>
+          <Segment inverted color="red" secondary>
+            <a href="mailto:jerome@artandnight.com?subject=art and night - ">
+              <img
+                src={iconMail}
+                height="26"
+                alt="email"
+                style={{ margin: '0.3em' }}
+              />{' '}
+              jerome@artandnight.com
+            </a>
+            <a href="https://fb.me/artandnight">
+              <img
+                src={iconFacebook}
+                height="26"
+                alt="facebook"
+                style={{ margin: '0.3em' }}
+              />{' '}
+              fb.me/artandnight
+            </a>
+            <a href="https://twitter.com/art_and_night">
+              <img
+                src={iconTwitter}
+                height="30"
+                alt="twitter"
+                style={{ margin: '0.3em', padding: '0.3em' }}
+              />{' '}
+              twitter.com/art_and_night
+            </a>
+          </Segment>
+        </p>
       </Container>
     </Segment>
   );

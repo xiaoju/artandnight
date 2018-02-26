@@ -33,7 +33,10 @@ function Curators() {
                 <span className="date">Some more text.</span>
               </Card.Meta> */}
               <Card.Description>
-                Contact: jerome@artandnight.com
+                <a href="mailto:jerome@artandnight.com?subject=art and night - ">
+                  {' '}
+                  jerome@artandnight.com
+                </a>
               </Card.Description>
             </Card.Content>
           </Card>
