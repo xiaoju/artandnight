@@ -15,85 +15,83 @@ export default class NavBar extends Component {
     const { activeItem } = this.state;
     return (
       <Container>
-        <Grid padded="vertically">
-          <Grid.Row columns={2}>
-            <Grid.Column floated="left" width={3}>
-              <Image
-                href="/"
-                src="/assets/logo.svg"
-                fluid
-                style={{
-                  // margin: '5%',
-                  minWidth: '15em'
-                }}
-              />
-            </Grid.Column>
+        <Menu size="large" secondary stackable color="red">
+          <Menu.Item
+            href="/home"
+            name="home"
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+          >
+            <Image
+              href="/"
+              src="/assets/logo.svg"
+              style={{
+                maxWidth: '10em'
+              }}
+            />
+          </Menu.Item>
+          <Menu.Menu position="right">
+            <Menu.Item
+              href="/home"
+              name="home"
+              active={activeItem === 'home'}
+              onClick={this.handleItemClick}
+            >
+              {/* Home */}
+              Accueil
+            </Menu.Item>
 
-            <Grid.Column stretched>
-              <Menu size="large" secondary stackable color="red">
-                <Menu.Item
-                  href="/home"
-                  name="home"
-                  active={activeItem === 'home'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* Home */}
-                  Accueil
-                </Menu.Item>
+            <Menu.Item
+              name="artists"
+              href="/artists"
+              active={activeItem === 'artists'}
+              onClick={this.handleItemClick}
+            >
+              {/* Artists */}
+              Artistes
+            </Menu.Item>
 
-                <Menu.Item
-                  name="artists"
-                  href="/artists"
-                  active={activeItem === 'artists'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* Artists */}
-                  Artistes
-                </Menu.Item>
+            <Menu.Item
+              name="curators"
+              href="/curators"
+              active={activeItem === 'curators'}
+              onClick={this.handleItemClick}
+            >
+              {/* Curators */}
+              Curateurs
+            </Menu.Item>
 
-                <Menu.Item
-                  name="curators"
-                  href="/curators"
-                  active={activeItem === 'curators'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* Curators */}
-                  Curateurs
-                </Menu.Item>
+            <Menu.Item
+              name="locations"
+              href="/locations"
+              active={activeItem === 'locations'}
+              onClick={this.handleItemClick}
+            >
+              {/* Locations */}
+              Lieux
+            </Menu.Item>
 
-                <Menu.Item
-                  name="locations"
-                  href="/locations"
-                  active={activeItem === 'locations'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* Locations */}
-                  Lieux
-                </Menu.Item>
+            <Menu.Item
+              name="agenda"
+              href="/agenda"
+              active={activeItem === 'agenda'}
+              onClick={this.handleItemClick}
+            >
+              {/* Agenda */}
+              Agenda
+            </Menu.Item>
 
-                <Menu.Item
-                  name="agenda"
-                  href="/agenda"
-                  active={activeItem === 'agenda'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* Agenda */}
-                  Agenda
-                </Menu.Item>
-
-                <Menu.Item
-                  name="about"
-                  href="/about"
-                  active={activeItem === 'about'}
-                  onClick={this.handleItemClick}
-                >
-                  {/* About */}
-                  A propos
-                </Menu.Item>
-              </Menu>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+            <Menu.Item
+              name="about"
+              href="/about"
+              active={activeItem === 'about'}
+              onClick={this.handleItemClick}
+            >
+              {/* About */}
+              A propos
+            </Menu.Item>
+          </Menu.Menu>
+        </Menu>
       </Container>
     );
   }
