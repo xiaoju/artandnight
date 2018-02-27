@@ -16,12 +16,7 @@ export default class NavBar extends Component {
     return (
       <Container>
         <Menu size="large" secondary stackable color="red">
-          <Menu.Item
-            href="/home"
-            name="home"
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-          >
+          <Menu.Item href="/home" name="home" onClick={this.handleItemClick}>
             <Image
               href="/"
               src="/assets/logo.svg"
