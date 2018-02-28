@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Container, Header } from 'semantic-ui-react';
+import { Segment, Container, Header } from 'semantic-ui-react';
 import iconFacebook from '../pictures/iconFacebook.svg';
 import iconTwitter from '../pictures/iconTwitter.svg';
 import iconMail from '../pictures/iconMail.svg';

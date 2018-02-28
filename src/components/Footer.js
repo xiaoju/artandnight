@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 import './footer.css';
 
 import iconRealisation from '../pictures/iconRealisation.svg';

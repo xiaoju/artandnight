@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, Image, Container, Grid } from 'semantic-ui-react';
+import { Menu, Image, Container } from 'semantic-ui-react';
 
 export default class NavBar extends Component {
   constructor(props) {
