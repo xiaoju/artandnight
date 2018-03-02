@@ -8,7 +8,11 @@ function Agenda() {
       color="red"
       textAlign="center"
       padded="very"
-      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '11em' }}
+      // style={{
+      //   // borderRadius: 0,
+      //   marginBottom: '2em',
+      //   paddingBottom: '11em'
+      // }}
     >
       <Header
         style={{ 'min-height': '2em' }}

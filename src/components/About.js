@@ -11,7 +11,12 @@ function About() {
       color="red"
       textAlign="center"
       padded="very"
-      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+      // style={{
+      //   // flex: '1 1 auto',
+      //   // borderRadius: 0,
+      //   marginBottom: '2em',
+      //   paddingBottom: '3em'
+      // }}
     >
       <Container>
         <Header

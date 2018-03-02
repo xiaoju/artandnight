@@ -8,7 +8,11 @@ function Curators() {
       color="red"
       textAlign="center"
       padded="very"
-      style={{ borderRadius: 0, marginBottom: '2em', paddingBottom: '3em' }}
+      // style={{
+      //   // borderRadius: 0,
+      //   marginBottom: '2em',
+      //   paddingBottom: '3em'
+      // }}
     >
       <Container>
         <Header
